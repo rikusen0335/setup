@@ -11,9 +11,10 @@ yay -Syu
 - ZSH
 - tmux
 - asdf-vm
+- fcitx-mozc
 
 ```
-yay -S discord alacritty firefox code zsh tmux
+yay -S discord alacritty firefox code zsh tmux fcitx-im
 ```
 
 ### prezto
@@ -44,8 +45,31 @@ echo ". \$HOME/.asdf/asdf.sh" >> ~/.zshrc
 ```
 
 # Edit config
+
+### Alacritty
 ```
 vim ~/.alacritty.yml
 ```
 copy and paste this: https://github.com/alebelcor/alacritty-snazzy/blob/master/snazzy.yml
 
+### fcitx
+
+```vim ~/.xprofile
+
+(paste these)
+
+export LANG="ja_JP.UTF-8"
+export XMODIFIERS="@im=fcitx"
+export XMODIFIER="@im=fcitx"
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export DefaultIMModule=fcitx
+
+vim ~/.zshrc
+
+(paste these)
+
+export GTK_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export QT_IM_MODULE=fcitx
+```
