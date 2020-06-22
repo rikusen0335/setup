@@ -1,9 +1,9 @@
-## initial
+# Initial
 ```
 yay -Syu
 ```
 
-### install applications
+# Install applications
 - Discord
 - Alacritty
 - Firefox
@@ -42,3 +42,10 @@ git checkout "$(git describe --abbrev=0 --tags)"
 
 echo ". \$HOME/.asdf/asdf.sh" >> ~/.zshrc
 ```
+
+# Edit config
+```
+vim ~/.alacritty.yml
+```
+copy and paste this: https://github.com/alebelcor/alacritty-snazzy/blob/master/snazzy.yml
+
