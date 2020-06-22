@@ -1,0 +1,2 @@
+# setup
+Linux setup instruction
