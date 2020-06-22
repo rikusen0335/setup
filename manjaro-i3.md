@@ -18,9 +18,25 @@ yay -S discord alacritty firefox code zsh tmux
 
 ### asdf-vm
 ```
+zsh
+
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 cd ~/.asdf
 git checkout "$(git describe --abbrev=0 --tags)"
 
-. $HOME/.asdf/asdf.sh
+echo ". \$HOME/.asdf/asdf.sh" >> ~/.zshrc
+```
+
+### prezto
+```
+zsh
+
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
+chsh -s /bin/zsh
 ```
