@@ -14,7 +14,7 @@ yay -Syu
 - fcitx-mozc
 
 ```
-yay -S discord alacritty firefox code zsh tmux fcitx-im
+yay -S discord alacritty firefox code zsh tmux fcitx-mozc fcitx-im fcitx-configtool adobe-source-han-sans-jp-fonts
 ```
 
 ### prezto
