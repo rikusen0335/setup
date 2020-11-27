@@ -1,0 +1,26 @@
+[directory]
+truncation_length = 5
+truncation_symbol = "@"
+
+[character]
+format = "$symbol "
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+use_symbol_for_status = true
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[cmd_duration]
+min_time = 500
+format = " [$duration](bold yellow)"
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖 "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
